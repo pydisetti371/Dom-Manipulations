@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Do With Javascript</title>
+    <link rel="stylesheet" href="index.css">
     <script defer src="index.js"></script>
+
 </head>
 
 <body>
@@ -15,26 +17,15 @@
     <p>Paragraph3</p>
     <button onclick="highlightText()">Highlight</button>
 
-    <hr/>
-    <input type="text" id="searchInput" placeholder="Type something here" onKeyup="searchItems()">
-    <ul id="itemList">
-        <li>Apple</li>
-        <li>Banana</li>
-        <li>Cherry</li>
-        <li>Date</li>
-        <li>Elderberry</li>
-    </ul>
+    <hr />
+
     <p class="count_duplicate">Madhan Madhan</p>
     <div id="text">This is a test. This test is only a test.</div>
     <div id="displayDuplicateWords"></div>
     <ul id="ul-list">
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-        <li>D</li>
-        <li>E</li>
+
     </ul>
-    <img alt="nothing"/>
+    <img alt="profile" />
     <button id="button">Hello</button>
     <input id="search" placeholder="search" name="input">
     <div id="grandparent">
@@ -46,4 +37,64 @@
     <button id="custom_event" onclick="handleClickCustom('madhan')">Login</button>
 </body>
 
-</ht
+<form id="my-form" onsubmit="formSubmit(event)">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" onchange="textChange()" />
+        <span id="nameError"></span>
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" onchange="emailChange()" />
+        <span id="emailError"></span>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" onchange="passwordChange()" />
+        <span id="passwordError"></span>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+<div id="formErrors"></div>
+
+<input type="text" id="userList" onchange="userListChange()" />
+<p id="existinguser"></p>
+
+<input type="text" name="fruit" oninput="fruitChange()" />
+<ul id="fruits_list">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+    <li>Orange</li>
+    <li>pineapple</li>
+</ul>
+<div id="parentElem">
+    <p>Hello</p>
+    <p>Dom</p>
+
+</div>
+
+<div id="main-id">
+    <p class="info">
+        <span id="text_dom">I love Dom</span>
+        <span id="next-dom">I love Js</span>
+    </p>
+    <!-- Comment node -->
+</div>
+
+<div>
+    <h1 id="somethingh1">h1</h1>
+    <h2 id="somethingh2">h2</h2>
+    <h3 id="somethingh3">h3</h3>
+</div>
+<div id="editexample" onclick="editThis()">
+    <p id="editthis">Edit this</p>
+
+</div>
+
+<ul id="ul-lists">
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+</ul>
+</html>
