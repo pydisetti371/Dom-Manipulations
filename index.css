@@ -1,0 +1,8 @@
+.hide {
+    font-size: 14px;
+    display: none;
+}
+
+.show {
+    display: block;
+}
